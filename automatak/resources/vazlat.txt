@@ -1,0 +1,140 @@
+1. Bemelegítés
+	0. Célkitűzés
+		- mi a probléma, amit meg akarunk oldani
+	1. Állapotgépek
+		- Számítógép ki/be
+		- Sakk-program*
+		- Italautomata
+		1. smiley-k, ly/lly-keresés
+			- https://infoc.eet.bme.hu/ea12/#2
+		2. Gyümölcs-árús
+			- https://classic.csunplugged.org/finite-state-automata/
+			- TODO:
+				- Átírni felszerelés-mentesre
+				- Nyomtatni
+			- Hasonló: http://www.mathmaniacs.org/lessons/fsm/index.html 
+	2. Automaták
+		- Alapfogalmak
+			1. ábc
+			2. szó
+			3. nyelv
+		- Egyszerű példa
+			1. páros nulla sorozat
+			2. exact szöveg
+
+2. Teljes Determinsztikus Automaták
+	0. recap
+		- alapfogalmak
+		- példa
+	1. string 0/1-re vagy a/b-re konvertálása
+		- Ez azért kell, hogy legyen kontextus ahhoz, hogy miért szerencsétlenkedünk 0/1-ekkel
+		- Mizó szerint ki kéne hagyni, és helyette átírni a feladatokat érdekesebbre
+			- Ezesetben skippelni a teljes automatákat vagy bevezetni karakter-csoportosításokat
+			- példa rendes szöveges feladatokra:
+				- http://www.cs.cmu.edu/~tom7/211/fsm1.html
+		1. unárisan(0 := space)
+		2. binárisan(ASCII)
+	2. egyszerűbb feladatok
+		1. amire nem maradt idő az 1.-ben
+		2. tartalmaz exact szöveget
+		3. nullára végződik
+	3. bonyolultabb feladatok
+		1. több párhuzamos feltétel
+			- 2n "a" && 2n "b"
+			- 2n "a" && 3n "b" 
+		2. adott számszor tartalmazza, de nem tuduk, hogy hol
+		3. öszetettebb követelmények
+			- van "a", és az utolsó "b" után páros sok "b" következik.
+			- negálás
+			- zh feladatok
+
+3. Nyalánkságok
+	- ez akár két foglalkozás is lehet az anyag szempontjából
+	0. recap
+		- előző órai feladatok átismétlése, elmagyarázása
+	1. Automaták minimalizálása
+		- https://www.geeksforgeeks.org/minimization-of-dfa/
+	2. palindrom/a^n*b^n
+		- skatulyaelv bizonyítás(fiatalabb csoportoknak ajánlott)
+			- http://www.cs.bme.hu/~friedl/alg/regularis.pdf
+		- pumpálós lemma bizonyítás? (katay preferálta, idősebb csoportoknak ajánlott)
+			- https://www.cs.bme.hu/~csima/fony00/pumpa/pumpa.html
+			- Lehet ezzel kapcsolatos feladatokat adni, ha ezt választjuk
+	3. Hiányos automaták
+		- Bemutatás
+		- Ekvivalens-e?
+			- hiányosból teljes(triviális)
+			- teljesből hiányos(algoritmus)
+				- +1 állapot
+	4. Nem-determinisztikus automaták
+		- Bemutatás, mire jó
+		- Számítási fa
+		- Ekvivalens-e?
+			- determinisztikusból nem-determinisztikus(triviális)
+			- nem-determinisztikusból determinisztikus(algoritmus)
+				- https://www.javatpoint.com/automata-conversion-from-nfa-to-dfa
+
+4. Verseny
+	- két(?) csapatra bomlanak, és kitalálnak egy-egy automatát. A másik csoportnak ki kell találnia a nyelvet.
+		- Szabályok:
+			- maximum n+1 állapot, ahol n a csoporttagok száma(szükség esetén én is részt veszek)
+			- lehetőleg minimális automata, ne legyenek felesleges állapotok, ha nem muszáj
+			- mindenkinek részt kell vennie a feladatban
+			- saját magukon modellezzék az automatát. Pl.:
+				- az emberek a csomópontok és egymásra mutatnak vagy feltartott hüvelykujjal vagy ököllel(0/1)
+				- egy tárgyat adnak körbe ami bemutatja, hogy hogy halad végig az adott input
+				- ezeknél kreatívabb megoldásokat érdemes honorálni, illetve felírni későbbi táborokra
+	- egy verseny belefér, kettő nem biztos, így viszont marad idő összefoglalásra, kitekintésre(veremautomata, Turing-gép)
+
+5. Reguláris nyelvek
+	1. reguláris kifejezések
+		- szabályok
+		- korábbi példák megoldása
+		- negálás
+		- Evivalens-e?
+			- regulárisból automata(Thompson's algorithm)
+				- https://cse.iitkgp.ac.in/~bivasm/notes/scribe/11CS10055.pdf
+			- automatából reguláris(State Elimination)
+				- https://www.geeksforgeeks.org/state-elimination-method-convert-dfa-nfa-ɛ-nfa-into-regular-expression/
+	2. regex
+		- Lehet, hogy unalmas, de hasznos és ez a végcél
+			- Az implementáció megtanulására ne fektessünk sok időt, mert száraz. Inkább azt nézzük meg, hogy mivel egészíti ki a vanilla reguláris kifejezéseket
+		- https://infoc.eet.bme.hu/ea12/#16
+		1. karakterosztályok
+		2. egyéb funkcionalitások
+		3. egyszerűbb feladatok
+			- elméleti szinten, ne menjünk bele részletesen
+		4. email regex
+			- miért nem lehet jó email regex-et írni?
+			- mit csinálunk helyette?
+
+6. Környezetfüggetlen nyelvek
+	- http://cs.bme.hu/~friedl/alg/cf.pdf
+	- Bemutatás
+		- miben más az amit ez csinál, mint az eddigiek
+	- egyszerűbb feladatok
+	- palindrom
+	- levezetési fa
+	- egyértelműség(?)
+		- szerintem nem kell ez nekik, de ha van idő rá akkor miért ne?
+
+7. Veremautomata, Turing-gép
+	- TODO
+
+
+A 4, 5, 6 sorrendje tetszőleges, a versenyt kezeljük jutalomként, ha kellően gyorsan haladtunk
+
+*: prog3 házimként egy sakk GUI-t kellett csinálnom, ehhez pedig egy állapotgépet használtam arra, hogy mikor mi legyen kattintható a felületen. Példa: alapállapotban csak a fehér bábúk mezői kattinthatóak. Utána azok a mezők amire léphet. ha rosszra kattint, visszaugrunk, ha jóra kattint, a fekete bábuk mezői kattinthatóak...
+
+Formális elmélet:
+	- https://aries.ektf.hu/~serial/kiralyroland/download/formalis_nyelvek_es_automatak_KR_TAMOP_20121116.pdf
+	- http://www.cs.bme.hu/~friedl/alg/regularis.pdf
+	- http://www.cs.bme.hu/~friedl/nyau/jegyzet-13.pdf
+
+Kidolgozott algel gyakorlatok:
+	- tinyurl.com/algel-gyak
+		- 2: Automaták
+		- 3: Reguláris kifejezések
+
+Egyéb funky feladatok, ha van idő:
+	- http://revue.sesamath.net/IMG/pdf/mockingbird3.pdf
