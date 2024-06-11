@@ -1,6 +1,5 @@
 ## Table of Contents
 
-- [Linkek](#linkek)
 - [Első foglalkozás: Bemelegítés](#első-foglalkozás-bemelegítés)
   - [**Intro**](#intro)
   - [**Állapotgépek**](#állapotgépek)
@@ -24,26 +23,8 @@
 - [Ötödik foglalkozás: Reguláris nyelvek](#ötödik-foglalkozás-reguláris-nyelvek)
 - [Hatodik foglalkozás: Környezetfüggetlen nyelvek](#hatodik-foglalkozás-környezetfüggetlen-nyelvek)
 - [Hetedik foglalkozás: Veremautomata, Turing-gép](#hetedik-foglalkozás-veremautomata-turing-gép)
+- [Források](#források)
 
-
-# Linkek
-
-- https://madebyevan.com/fsm/
-- https://infoc.eet.bme.hu/ea12/
-- https://classic.csunplugged.org/finite-state-automata/
-- http://www.mathmaniacs.org/lessons/fsm/index.html
-- http://www.cs.cmu.edu/~tom7/211/fsm1.html
-- http://www.cs.bme.hu/~friedl/alg/regularis.pdf
-- https://www.geeksforgeeks.org/minimization-of-dfa/
-- https://www.cs.bme.hu/~csima/fony00/pumpa/pumpa.html
-- https://www.javatpoint.com/automata-conversion-from-nfa-to-dfa
-- https://cse.iitkgp.ac.in/~bivasm/notes/scribe/11CS10055.pdf
-- https://www.geeksforgeeks.org/state-elimination-method-convert-dfa-nfa-ɛ-nfa-into-regular-expression/
-- http://cs.bme.hu/~friedl/alg/cf.pdf
-- https://aries.ektf.hu/~serial/kiralyroland/download/formalis_nyelvek_es_automatak_KR_TAMOP_20121116.pdf
-- tinyurl.com/algel-gyak
-- http://www.cs.bme.hu/~friedl/nyau/jegyzet-13.pdf
-- http://revue.sesamath.net/IMG/pdf/mockingbird3.pdf
 
 # Első foglalkozás: Bemelegítés
 
@@ -230,3 +211,22 @@ A játék szabályai:
 # Hatodik foglalkozás: Környezetfüggetlen nyelvek
 
 # Hetedik foglalkozás: Veremautomata, Turing-gép
+
+# Források
+
+- https://madebyevan.com/fsm/
+- https://infoc.eet.bme.hu/ea12/
+- https://classic.csunplugged.org/finite-state-automata/
+- http://www.mathmaniacs.org/lessons/fsm/index.html
+- http://www.cs.cmu.edu/~tom7/211/fsm1.html
+- http://www.cs.bme.hu/~friedl/alg/regularis.pdf
+- https://www.geeksforgeeks.org/minimization-of-dfa/
+- https://www.cs.bme.hu/~csima/fony00/pumpa/pumpa.html
+- https://www.javatpoint.com/automata-conversion-from-nfa-to-dfa
+- https://cse.iitkgp.ac.in/~bivasm/notes/scribe/11CS10055.pdf
+- https://www.geeksforgeeks.org/state-elimination-method-convert-dfa-nfa-ɛ-nfa-into-regular-expression/
+- http://cs.bme.hu/~friedl/alg/cf.pdf
+- https://aries.ektf.hu/~serial/kiralyroland/download/formalis_nyelvek_es_automatak_KR_TAMOP_20121116.pdf
+- tinyurl.com/algel-gyak
+- http://www.cs.bme.hu/~friedl/nyau/jegyzet-13.pdf
+- http://revue.sesamath.net/IMG/pdf/mockingbird3.pdf
