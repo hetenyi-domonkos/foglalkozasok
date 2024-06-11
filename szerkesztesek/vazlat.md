@@ -1,52 +1,16 @@
 ## Table of Contents
 
 - [Mohr-Mascheroni szerkesztések](#mohr-mascheroni-szerkesztések)
-  - [Table of Contents](#table-of-contents-1)
-- [Mohr-Mascheroni szerkesztések](#mohr-mascheroni-szerkesztések-1)
     - [Az Euklideszi szerkesztések alaplépései:](#az-euklideszi-szerkesztések-alaplépései)
     - [Körző vagy vonalzó nélkül](#körző-vagy-vonalzó-nélkül)
     - [Geometriai transzformációk](#geometriai-transzformációk)
-    - [Geometriai transzformációk](#geometriai-transzformációk-1)
   - [Inverzió](#inverzió)
-  - [Inverzió](#inverzió-1)
     - [Egyenes inverze](#egyenes-inverze)
-    - [Egyenes inverze](#egyenes-inverze-1)
     - [Kör inverze](#kör-inverze)
-    - [Kör inverze](#kör-inverze-1)
   - [Mohr-Mascheroni tétel](#mohr-mascheroni-tétel)
-  - [Mohr-Mascheroni tétel](#mohr-mascheroni-tétel-1)
 - [Poncelet-Steiner tétel](#poncelet-steiner-tétel)
   - [Eszközváltás](#eszközváltás)
-- [Poncelet-Steiner tétel](#poncelet-steiner-tétel-1)
-  - [Eszközváltás](#eszközváltás-1)
   - [Szomorú tény](#szomorú-tény)
-  - [Szomorú tény](#szomorú-tény-1)
-- [Források](#források)
-
-# Mohr-Mascheroni szerkesztések
-## Table of Contents
-
-- [Mohr-Mascheroni szerkesztések](#mohr-mascheroni-szerkesztések)
-  - [Table of Contents](#table-of-contents-1)
-- [Mohr-Mascheroni szerkesztések](#mohr-mascheroni-szerkesztések-1)
-    - [Az Euklideszi szerkesztések alaplépései:](#az-euklideszi-szerkesztések-alaplépései)
-    - [Körző vagy vonalzó nélkül](#körző-vagy-vonalzó-nélkül)
-    - [Geometriai transzformációk](#geometriai-transzformációk)
-    - [Geometriai transzformációk](#geometriai-transzformációk-1)
-  - [Inverzió](#inverzió)
-  - [Inverzió](#inverzió-1)
-    - [Egyenes inverze](#egyenes-inverze)
-    - [Egyenes inverze](#egyenes-inverze-1)
-    - [Kör inverze](#kör-inverze)
-    - [Kör inverze](#kör-inverze-1)
-  - [Mohr-Mascheroni tétel](#mohr-mascheroni-tétel)
-  - [Mohr-Mascheroni tétel](#mohr-mascheroni-tétel-1)
-- [Poncelet-Steiner tétel](#poncelet-steiner-tétel)
-  - [Eszközváltás](#eszközváltás)
-- [Poncelet-Steiner tétel](#poncelet-steiner-tétel-1)
-  - [Eszközváltás](#eszközváltás-1)
-  - [Szomorú tény](#szomorú-tény)
-  - [Szomorú tény](#szomorú-tény-1)
 - [Források](#források)
 
 # Mohr-Mascheroni szerkesztések
@@ -77,8 +41,7 @@ Egy bemelegítő szerkesztés: derékszögű háromszög melynek tudjuk két old
 
 A hat alaplépés közül néhány triviális az egyik eszköz nélkül is, néhány viszont konkrétan lehetetlennek tűnik.
 
-| Csak körzővel nehéz                                                          |
-| ---------------------------------------------------------------------------- |
+
 | Csak körzővel nehéz                                                          |
 | ---------------------------------------------------------------------------- |
 | 1. A vonalzót két adott ponton átmenő egyenes megrajzolására használhatjuk.* |
@@ -93,13 +56,7 @@ A hat alaplépés közül néhány triviális az egyik eszköz nélkül is, néh
  | 2. A körzővel adott pont körül adott hosszú sugárral kört rajzolhatunk.* |
  | 4. Egyenes és kör metszéspontját megjelölhetjük.                         |
  | 5. Két kör metszéspontját megjelölhetjük.                                |
- | ~~6. Két pont távolságát körzőnyílásba vehetjük.~~                       |
- | Csak vonalzóval nehéz                                                    |
- | ------------------------------------------------------------------------ |
- | 2. A körzővel adott pont körül adott hosszú sugárral kört rajzolhatunk.* |
- | 4. Egyenes és kör metszéspontját megjelölhetjük.                         |
- | 5. Két kör metszéspontját megjelölhetjük.                                |
- | ~~6. Két pont távolságát körzőnyílásba vehetjük.~~                       |
+ | ~~6. Két pont távolságát körzőnyílásba vehetjük.~~ |
 
 \* ezeket szerencsére nem kell majd implementálnunk, hiszen maga az egyenes vagy kör megrajzolása csak esztétikai célt szolgál, ha a többi lépést meg tudjuk oldani más módon
 
@@ -112,8 +69,6 @@ Először nézzük meg, hogy mi az, ami egyáltalán eszünkbe jut, hogy az egyi
 - szakasz duplázás
 
 Folytassuk a dolgokat csak körzővel, az úgyis jobban ment. Ahhoz, hogy pótolni tudjuk a hiányzó lépéseket, ahhoz létre kell hoznunk egy új geometriai transzformációt, a körre tükrözést. Az lesz az elképzelés, hogy *valahogy* körökké alakítjuk, az "egyeneseinket", így tudjuk őket kezelni, és ha megvagyunk, visszaalakíthatjuk őket.
-
-### Geometriai transzformációk
 
 ### Geometriai transzformációk
 
@@ -139,7 +94,6 @@ Az általunk ismert geometriai transzformációk, általában mind szögtartóak
 - pontra/egyenesre tükrözés
 - hasonlóság
 
-## Inverzió 
 ## Inverzió 
 
 Nekünk olyan transzformáció kell, ami **nem** egyenestartó! Hogy néz ki egy ilyen?... Egy P pont O középpontú, r sugarú körre vett inverz képét úgy kapjuk meg, hogy $OP \times OP' = r^2$. Most még egyelőre csak higyjük el, hogy ez nem lesz egyenestartó és kezdjünk el inkább azon gondolkodni, hogy hogyan szerkesszük meg.
@@ -176,8 +130,6 @@ Egy kis összefoglalás a triviális észrevételekről:
 
 ### Egyenes inverze
 
-### Egyenes inverze
-
 Ahhoz, hogy meg tudjuk szerkeszteni egy egyenes inverzét, ahhoz először is tudnunk kell, hogy mit akarunk kapni. Mi lesz egy egyenes inverz képe? Ahogy azt már láttuk, a póluson átmenő egyenes képe önmaga. De én azt ígértem nektek, hogy az inverzió nem lesz egyenestartó, és ez így is van. nézzünk meg egy másik, a póluson át-nem-menő egyenest is. Invertáljuk néhány pontját, és nézzük meg mit kaptunk. Ez bizony egy kör. Bizonyítsuk be, hogy tényleg kört kapunk.
 
 ![](./media/Line_inversion_proof.png)
@@ -203,8 +155,6 @@ Oké, szóval kör lesz. Szerkesszük meg. A két adott pontunk segítségével 
 
 ### Kör inverze
 
-### Kör inverze
-
 Robogjunk tovább a körökre. Kezdjük a legtriviálisabbal: az alapkör képe önmaga. Eggyel kevésbe magától értetődő, de a korábbi állításainkból könnyen belátható, hogy egy póluson átmenő kör képe egy póluson át-nem-menő egyenes lesz, hiszen az inverzió kétszer alkalmazva identitás. Nézzük a póluson át-nem-menő köröket! Ezeknek a képe póluson át-nem-menő kör lesz. 
 
 **insert bizonyítás!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**.
@@ -222,7 +172,6 @@ Szépen kiválasztjuk a három megadott pontból találomra az egyiket, tetszől
 - (az alapkörre [merőleges kör](https://mathworld.wolfram.com/OrthogonalCircles.html) képe önmaga)
 
 ## Mohr-Mascheroni tétel
-## Mohr-Mascheroni tétel
 
 Most, hogy mindennek meg tudjuk szerkeszteni az inverz képét (és azokat csak körzővel meg tudjuk szerkeszteni), a nehezén túl vagyunk. Ha  meg tudjuk szerkeszteni két egyenes metszéspontját, illetve egy egyenes és egy kör metszéspontját, akkor bebizonyítottuk, hogy mindent, amit meg lehet szerkeszteni körzővel és vonalzóval, azt meg lehet szerkeszteni csak körzővel is.
 
@@ -236,9 +185,6 @@ Nem lesz ez nagyon máshogy a kör-egyenes esetben sem. Invertáljuk az alakzato
 
 Ezzel be is bizonyítottuk a Mohr-Mascheroni tételt, és szabadon otthon hagyhatjuk mostantól a körzőnket. Juhuuu! Az egyetlen probléma, hogy inkább körzőből szokott hiány lenni, mintsem fordítva...
 
-# Poncelet-Steiner tétel
-
-## Eszközváltás
 # Poncelet-Steiner tétel
 
 ## Eszközváltás
@@ -263,11 +209,6 @@ Na ezt fel is tudjuk használni. Csak meg kell *valahogy* szerkeszteni a trapéz
   7. Construct a line $AX$ (in magenta).
   8. Lines $BR$ and $AX$ intersect at point $Q$.
   9. Construct a line $PQ$ (in dark blue), the desired parallel.
-   
-
-## Szomorú tény
-
-   
 
 ## Szomorú tény
 
