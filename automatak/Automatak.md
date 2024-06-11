@@ -63,7 +63,7 @@ Egyszerű, mindennapi példák, amiket állapotgépekkel lehet leírni(nem kell 
   A prog3 házimként egy sakk GUI-t kellett csinálnom, ehhez pedig egy állapotgépet használtam arra, hogy mikor mi legyen kattintható a felületen (a játékfelületek működése nem lesz idegen a gyerekeknek). Példa: alapállapotban csak a fehér bábúk mezői kattinthatóak. Utána azok a mezők amire léphet. ha rosszra kattint, visszaugrunk, ha jóra kattint, a fekete bábuk mezői kattinthatóak..
 
 - #### **Italautomata**
-     ![italautomata](./kepek/italautomata.png)
+     ![italautomata](./media/italautomata.png)
 
 ### 1. [Smiley-k, és ly/lly keresés](https://infoc.eet.bme.hu/ea12/#2)
 * Feladat: megkeresni a beírt szövegben a szmájlikat, és utána úgy kiírni a szöveget, hogy képek szerepelnek benne helyettük.
@@ -81,7 +81,7 @@ Egy interaktív feladaton keresztül a csoport megpróbálja modellezni, hogy a 
 
 Az előző feladatban már találkoztunk automatákkal, de még nem tudtuk, hogy mi az. Megtanuljuk, hogy hogyan érdemes automatákat rajzolni, hogyan lehet őket leírni, illetve, hogy mik az alapfogalmak, amikkel érdemes tisztában lenni.
 
-![Alapafogalmak](./kepek/Alapfogalmak.png)
+![Alapafogalmak](./media/Alapfogalmak.png)
 
 Lényegtelen, hogy az állapotokat betűvel(A, B, C, stb.), vagy index-el(q1, q2, q3, stb.) jelöljük, de mutassuk meg mindkét konvenciót, mert feladatmegoldásnál az elsőt akarják majd használni, de a második jól jön bizonyításoknál(Lehet szórakozni a táblázatos, átmeneti-függvényes leírással is, de ezt unalmasnak fogják találni. A későbbi feladatoknál a bizonyításokból ezt ki fogjuk hagyni, és inkább vizuálisan mutatjuk be az algoritmusokat.)
 
@@ -91,15 +91,15 @@ Lényegtelen, hogy az állapotokat betűvel(A, B, C, stb.), vagy index-el(q1, q2
 
 * 1-essel végződő szövegek elfogadása
 
-    ![1.1](./kepek/1.1.png)
+    ![1.1](./media/1.1.png)
 
 * csak 0-kból álló szövegek elfogadása
 
-    ![1.2](./kepek/1.2.png)
+    ![1.2](./media/1.2.png)
 
 * exact match 001-re
 
-    ![1.3](./kepek/1.3.png)
+    ![1.3](./media/1.3.png)
 
 # Második foglalkozás: Teljes véges automaták
 
@@ -125,7 +125,7 @@ A számítógépek binárisan tárolják az adatokat, de mi szövegeket akarunk 
 
 * 0/1-es szövegek elfogadása, amikben a 0-k száma páros
 
-    ![2.1](./kepek/2.1.png)
+    ![2.1](./media/2.1.png)
 
 * #### 0/1-es szövegek elfogadása, amikben a 0-k száma páratlan
 
@@ -135,18 +135,18 @@ A számítógépek binárisan tárolják az adatokat, de mi szövegeket akarunk 
 
   * lehet az is, hogy "tartalmaz legalább 3db 0-t", akkor cseréljük ki az utolsó 1-et 0-ra.
 
-  ![2.2](./kepek/2.2.png)
+  ![2.2](./media/2.2.png)
 
 
 * 0/1-es szövegek elfogadása, amikben a 0-k és az 1-ek száma is páros
 
   * kérjük meg a gyerekeket arra, hogy próbálják meg rendezni a megoldásaikat, mert borzalom kijavítani őket xdd
 
-  ![2.3](./kepek/2.3.png)
+  ![2.3](./media/2.3.png)
 
 * Miket fogad el a következő automata?
 
-  ![2.4](./kepek/2.4.png)
+  ![2.4](./media/2.4.png)
 
   * Megoldás: olyan szövegeket, amikben van 1,  ́es az utolsó 1 után páros sok 0.
 
@@ -174,7 +174,7 @@ Bizony nem mindent tudnak eldönteni az automaták. Próbáljunk, meg olyan auto
 
 * Ha kisebb csoportot tanítunk akkor érdemes skatulya elvvel bizonyítani
 
-  ![palindrom](./kepek/palindrom.png)
+  ![palindrom](./media/palindrom.png)
 
 * idősebbeknek meg lehet mutatni a [pumpálós lemmát](https://www.cs.bme.hu/~csima/fony00/pumpa/pumpa.html). Ha ezt választjuk, akkor érdemes lehet továbbai nem reguláris nyelveket is bizonyítani a gyakorlás kedvéért.
 
@@ -182,7 +182,7 @@ Bizony nem mindent tudnak eldönteni az automaták. Próbáljunk, meg olyan auto
 
 Ieformatikusos cuccot tanulunk, az informatikusok majdnem matematikusok, azok pedig lusták. Amúgy is folyton lefelejtjük a nem-releváns átmeneteket, úgyhogy nézzük meg, hogy hogyan lehet ezt legálisan is megtenni. Mutassuk be példaként az exact szöveget felismerő automatát, ezúttal a hiányos verzióban.
 
-![3.1](./kepek/3.1.png)
+![3.1](./media/3.1.png)
 
 Na ez már sokkal barátibb! Mondjuk el nekik a pontos játékszabályokat.
 
@@ -198,7 +198,7 @@ Az előbb láttuk, hogy van olyan, amit nem tudtunk teljes automatával megcsin�
 
 Részletesen megtervezni egy automatát olyan bonyolult! Minden lehetséges esetet számításba kell venni. Nem az volt, hogy mi lusták tudunk lenni, ha akarunk? DE. Mutassuk be példaként az 1-re végződő automatát, ezúttal nemdeterminisztikus verzióban.
 
-![3.2](./kepek/3.2.png)
+![3.2](./media/3.2.png)
 
 Mondjuk el a részletes játékszabályokat, levezetési fástúl. Érdemes megjegyezni, hogy a determinisztikus és a hiányos véges automata is speciális esete a nemdeterminisztikusnak.
 
