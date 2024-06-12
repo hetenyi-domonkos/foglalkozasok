@@ -46,7 +46,7 @@ Egyszerű, mindennapi példák, amiket állapotgépekkel lehet leírni(nem kell 
 - #### **Italautomata**
      ![italautomata](./media/italautomata.png)
 
-### 1. [Smiley-k, és ly/lly keresés](https://infoc.eet.bme.hu/ea12/#2)
+### 1. [Smiley-k, és ly/lly keresés](https://infoc.eet.bme.hu/ea13/#6)
 * Feladat: megkeresni a beírt szövegben a szmájlikat, és utána úgy kiírni a szöveget, hogy képek szerepelnek benne helyettük.
 * Feladat: számoljuk meg a beolvasott szövegben az ly betűket, ha lly-t találunk, az 2-nek számít.
 
