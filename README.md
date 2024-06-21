@@ -27,4 +27,4 @@ Nem beszélünk azokról a foglalkozásaimról, aminek nincs itt vázlata. Olyan
 | Foglalkozások száma| 4 (+3 WIP)    |
 | Felhasználva       | 2022-Palkove1 Y csoport (9)<br>2022-Pusztafalu P csoport (9)<br>	2023-Pusztafalu2 P csoport (9) |
 | Megjegyzések       | A diákok szeretik a foglalkozást, mert gondolkodni kell, de nem kell számolni, és nem csak az okosak tudnak belekapaszkodni <br> A pedesek elkaszálták a témát :(|
-| Publikus link      | |
+| Publikus link      | [Automaták](https://gist.github.com/hetenyi-domonkos/33b6ad4ed1d5bf9bff425f1c91f945e7) |
