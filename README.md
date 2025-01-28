@@ -6,25 +6,34 @@ Nem beszélünk azokról a foglalkozásaimról, aminek nincs itt vázlata. Olyan
 
 # Tematikák
 
-### Szerkesztés körző vagy vonalzó nélkül
+### [Szerkesztések](./szerkesztesek/vazlat.md)
   
 | Részletek          |       |
 | ------------------ | ----- |
-| Kulcsszavak        | Euklideszi szerkesztések, geometriai transzformációk, inverzió, Mohr-Mascheroni tétel, Poncelet-Steiner tétel|
+| Kulcsszavak        | Euklideszi szerkesztések,inverzió, Mohr-Mascheroni tétel|
 | Előfeltételek      | alapvető szerkesztési készségek, Thálesz tétel, hasonló háromszögek  |
 | Ajánlott évfolyamok| 9-12  |
 | Foglalkozások száma| ~4    |
-| Felhasználva       | 2021-Szolnok-osz Dz csoport (10-11)<br>2023-Velence-osz X csoport (11-12)|
-| Megjegyzések       | Hallottam már vissza korábbi években, hogy valaki emlékezett a foglalkozásra, és hasznosította a tudást, amikor otthonhagyta a vonalzóját :) <br> A fazekasosok 11-ben tanulják az inverziót és a Mohr-Mascheroni tételt :(|
-| Publikus link        | [Szerkesztések első fele](https://gist.github.com/hetenyi-domonkos/e99032945c45b6da8ae216a98f1a228c) |
-### Automaták
+| Felhasználva       | 2021-Szolnok-osz Dz csoport (10-11)<br>2023-Velence-osz X csoport (11-12)<br>2024-Pusztafalu	X csoport|
+| Megjegyzések       | Fazekasban 11-es anyag |
+
+### [Automaták](./automatak/Automatak.md)
 
 | Részletek          |       |
 | ------------------ | ----- |
 | Kulcsszavak        | algoritmuselmélet, állapotgépek, véges automaták|
 | Előfeltételek      | nincs :)  |
-| Ajánlott évfolyamok| 9-11, a maradékot kidolgozva 9-12, mert flexibilisen lehet válogatni nehézséget|
-| Foglalkozások száma| 4 (+3 WIP) |
-| Felhasználva       | 2022-Palkove1 Y csoport (9)<br>2022-Pusztafalu P csoport (9)<br>	2023-Pusztafalu2 P csoport (9) |
-| Megjegyzések       | A diákok szeretik a foglalkozást, mert gondolkodni kell, de nem kell számolni, és nem csak az okosak tudnak belekapaszkodni <br> A pedesek elkaszálták a témát :(|
-| Publikus link      | [Automaták](https://gist.github.com/hetenyi-domonkos/33b6ad4ed1d5bf9bff425f1c91f945e7) |
+| Ajánlott évfolyamok| 10-12 |
+| Foglalkozások száma| 4 |
+| Felhasználva       | 2022-Palkove1 Y csoport (9)<br>2022-Pusztafalu P csoport (9)<br>	2023-Pusztafalu2 P csoport (9)<br>2024-Sasto2 M csoport |
+| Megjegyzések       | A pedesek elkaszálták a témát :(| 
+
+
+### [Szavazások](./szavazasok/README.md) 
+| Részletek          |       |
+| ------------------ | ----- |
+| Kulcsszavak        | szavazási rendszerek, fairness criteria, Arrow's impossibility theorem|
+| Előfeltételek      | nincs :)  |
+| Ajánlott évfolyamok| 8-10  |
+| Foglalkozások száma| 1 |
+| Felhasználva       | 2024-Szolnok-osz	M csoport |
