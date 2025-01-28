@@ -185,40 +185,6 @@ Nem lesz ez nagyon máshogy a kör-egyenes esetben sem. Invertáljuk az alakzato
 
 Ezzel be is bizonyítottuk a Mohr-Mascheroni tételt, és szabadon otthon hagyhatjuk mostantól a körzőnket. Juhuuu! Az egyetlen probléma, hogy inkább körzőből szokott hiány lenni, mintsem fordítva...
 
-# Poncelet-Steiner tétel
-
-## Eszközváltás
-
-Próbáltunk már a múltkor csak vonalzós szerkesztést találni, de nemigazán találtunk egyet sem (ha de, akkor azt írjuk fel!). Az inverzióval szerencsénk volt, mert csak körzővel meg lehetett szerkeszteni és körökké alakította nekünk a dolgokat. Ilyenünk a vonalzós verzióban sajna nincs. Ettől függetlenül valamit csak meg lehet csinálni, különben nem ülnénk itt.
-
-Szerkesszünk párhuzamost adott ponton keresztül. Nehéz, úgyhogy tegyünk először egy kis kitérőt, ahol visszaköszön egy régi barát: trapéz oiniubwfviubjpweiouvbpwioerubn
-Szerkesszünk párhuzamost adott ponton keresztül. Nehéz, úgyhogy tegyünk először egy kis kitérőt, ahol visszaköszön egy régi barát: trapéz oiniubwfviubjpweiouvbpwioerubn
-
-**insert proof**
-
-Na ezt fel is tudjuk használni. Csak meg kell *valahogy* szerkeszteni a trapézt, és akkor lesz párhuzamosunk, szerencsére egy trapéznak jó sok egyenese van, illetve megszerncsébbre segítek azzal, hogy feltételezhetjük, hogy egy megfelezett szakasz már rendelkezésre áll az egyenesünkön.
-
-![](./media/Parallel_bisected_segment.png)
-
-  1. Construct a line $AP$ (in red).
-  2. Construct a line $BP$ (in orange).
-  3. Define an arbitrary point R on line $AP$.
-  4. Construct a line $BR$ (in green).
-  5. Construct a line $MR$ (in light blue).
-  6. Lines $MR$ and $BP$ intersect at point $X$.
-  7. Construct a line $AX$ (in magenta).
-  8. Lines $BR$ and $AX$ intersect at point $Q$.
-  9. Construct a line $PQ$ (in dark blue), the desired parallel.
-
-## Szomorú tény
-
-Ne adjunk fel minden reményt, lehet azért itt dolgokat csinálni. De sajnos nem mindent. Nincs olyan csak vonalzós szerkesztési eljárás, mely bármely kör középpontját előállítaná. Ez pedig azt jelenti, hogy nem fogunk tudni mindent megszerkeszteni, ezért kellett a felezett szakasz is az előző szerkesztésben. Sajnos ezt be is lehet bizonyítani könnyes szemmel:
-
-Indirekt módon bizonyítunk. Metsszünk el egy kúpot két nem párhuzamos síkkal, ahol tegyük fel hogy az egyiken megvalósítottuk vonalzóval a kör középpontjának előállítását. A sztereografikus vetítés egy egyenestartó transzformáció, tehát egy vonalzós szerkesztés lépéseit is levetíti. A kúp csúcsából indított vetítés viszont az egyik kör középpontját nem a másikéba viszi, tehát a vonalzós szerkesztésünk nem a középpontot állította elő.
-
-![](./media/Stereographic_projection_1.png)
-
-Egy kis extra segítséggel viszont végre tudjuk hajtani a szükséges lépéseket. A poncelet-Steiner szerkesztés megengedi egy (fix sugarú) körző egyszeri használatát. Elméletben ezzel már sínen leszünk.
 
 # Források
 - https://artofproblemsolving.com/wiki/index.php/Circular_Inversion
