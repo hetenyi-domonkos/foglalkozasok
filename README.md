@@ -2,22 +2,20 @@
 
 Ha nem írok vázlatot, akkor nem készülök fel rendesen a foglalkozásaimra hiszen "úgyis tudom az anyagot". Viszont amikor mást kéne csinálnom (pl.: tanulni), akkor hirtelen megjön a kedvem hasznosnak lenni. Ez a repo azon foglalkozásjegyzeteimet tartalmazza, amiket ilyen felindulásból részletesebben kidolgoztam. Elméletileg **kizárólag saját** fogyasztásra készültek, azon belül is inkább ömlengés, valami ami alapján kidolgozom a tényleges vázlatot majd tábor előtt, bármiféle matematikai precízség igénye nélkül, úgyhogy a pontatlanságokat / gyökérségeket / strukturálatlanságot kérlek nézd el, ha ide tévedtél. 
 
-Nem beszélünk azokról a foglalkozásaimról, aminek nincs itt vázlata. Olyanról sem ami itt van.
-
 # Tematikák
 
-### [Szerkesztések](./szerkesztesek/vazlat.md)
+### [Szerkesztések](./szerkesztesek/README.md)
   
 | Részletek          |       |
 | ------------------ | ----- |
 | Kulcsszavak        | Euklideszi szerkesztések,inverzió, Mohr-Mascheroni tétel|
 | Előfeltételek      | alapvető szerkesztési készségek, Thálesz tétel, hasonló háromszögek  |
-| Ajánlott évfolyamok| 9-12  |
+| Ajánlott évfolyamok| 10-12  |
 | Foglalkozások száma| ~4    |
 | Felhasználva       | 2021-Szolnok-osz Dz csoport (10-11)<br>2023-Velence-osz X csoport (11-12)<br>2024-Pusztafalu	X csoport|
 | Megjegyzések       | Fazekasban 11-es anyag |
 
-### [Automaták](./automatak/Automatak.md)
+### [Automaták](./automatak/README.md)
 
 | Részletek          |       |
 | ------------------ | ----- |
@@ -37,3 +35,4 @@ Nem beszélünk azokról a foglalkozásaimról, aminek nincs itt vázlata. Olyan
 | Ajánlott évfolyamok| 8-10  |
 | Foglalkozások száma| 1 |
 | Felhasználva       | 2024-Szolnok-osz	M csoport |
+| Megjegyzések       | Bővítés alatt áll |
