@@ -90,10 +90,10 @@ Ez többek között azért is hasznos mert így nem kell 3 különböző szavaz�
 
 |Első forduló||Második forduló||Harmadik forduló||
 |-|-|-|-|-|-|
-Aprajafalva|42|Aprajafalva|42|~~Aprajafalva~~|42
-Bélapátfalva|26|~~Bélapátfalva~~|26||
-~~Cédruslak~~|15|||
-Délvárad|17|Délvárad|32|Délvárad|58
+|Aprajafalva|42|Aprajafalva|42|~~Aprajafalva~~|42|
+|Bélapátfalva|26|~~Bélapátfalva~~|26|-|-|
+|~~Cédruslak~~|15|-|-|-|-|
+|Délvárad|17|Délvárad|32|Délvárad|58|
 
 Ezúttal **D** nyer. Igazságos ez? A harmadik helyről indult, ráadásul a döntő többség a legalsó két helyre sorolta.
 
@@ -101,7 +101,7 @@ Ezúttal **D** nyer. Igazságos ez? A harmadik helyről indult, ráadásul a dö
 
 Erősen befolyásolja az eredményt, hogy a népszerűtlen opciók között hogyan zajlik a szavazatok átadása, és ez fenyegeti a népszerűbb opciókat. Mi lenne, ha n-1 forduló helyett csak kettőt tartanánk és a második körben már csak a legnépszerűbb kettő maradna?
 
->Ez azt jelenti, hogy annyit javult a rendszer, hogy még az én >machinálásom ellenére is a túrázás nyer:
+>Ez azt jelenti, hogy annyit javult a rendszer, hogy még az én machinálásom ellenére is a túrázás nyer:
 >
 >|Első forduló     |       |Második forduló   |       | 
 >|:----------------|:-----:|------------------|-------|
@@ -113,10 +113,10 @@ A négy opciós buli szervezésnél, pedig az alábbi módon alakulnak a dolgok:
 
 |Első forduló||Második forduló||
 |-|-|-|-|
-Aprajafalva|42|~~Aprajafalva~~|42|
-Bélapátfalva|26|Bélapátfalva|58|
-~~Cédruslak~~|15|||
-~~Délvárad~~|17|||
+|Aprajafalva|42|~~Aprajafalva~~|42|
+|Bélapátfalva|26|Bélapátfalva|58|
+|~~Cédruslak~~|15|-|-|
+|~~Délvárad~~|17|-|-|
 
 Ezuttal **B**élapátfalva nyer annak ellenére, hogy mindenki pontosan ugyanúgy, *őszintén* szavazott, csak a rendszert változtattuk meg! Az eredmény is igazságosnak tűnik, mi lehet a probléma?
 
@@ -128,10 +128,10 @@ Ha **D** az első körben **C**-re szavaz saját maga helyett, akkor **B** nem j
 
 |Első forduló||Második forduló||
 |-|-|-|-|
-Aprajafalva|42|~~Aprajafalva~~|42|
-~~Bélapátfalva~~|26|||
-~~Cédruslak~~|0|||
-Délvárad|32|Délvárad|58|
+|Aprajafalva|42|~~Aprajafalva~~|42|
+|~~Bélapátfalva~~|26|-|-|
+|~~Cédruslak~~|0|-|-| 
+|Délvárad|32|Délvárad|58|
 
 Igazságos ez az eredmény? **C** a legkevesebb résztvevővel rendelkező település és mégis győzött! 
 
@@ -151,17 +151,17 @@ Preferenciás szavazást tartunk a 100 résztvevő között, és az alábbi öss
 
 |39|35|26|
 |-|-|-|
-|A|B|C
-|B|C|A
-|C|A|B
+|A|B|C|
+|B|C|A|
+|C|A|B|
 
 A preferenciák alapján a fordulók az alábbi módon zajlanak le:
 
 |Első forduló||Második forduló||
 |-|-|-|-|
-|**A**lmás|39|**A**lmás|65
-|**B**anános|35|~~**B**anános~~|35
-|~~**C**sokis~~|26
+|**A**lmás|39|**A**lmás|65|
+|**B**anános|35|~~**B**anános~~|35|
+|~~**C**sokis~~|26|
 
 A győztes egyértelműen az **A**lmás, azonban még az eredmény kihirdetése előtt 10 **B**anán-kedvelő megkereste a szavazás kiértékelésével felelős szervezőket, azzal hogy rájöttek, hogy jobban szeretik az **A**lmás fagyit mint a többit, ezért szeretnék megváltoztatni a szavazatukat. Tehát az új preferenciás táblázat így nézne ki:
 
@@ -175,9 +175,9 @@ Ahelyett hogy figyelmen kívül hagytuk volna a kérést(vagy megmondtuk volna n
 
 |Első forduló||Második forduló||
 |-|-|-|-|
-|**A**lmás|49|~~**A**lmás~~|49
+|**A**lmás|49|~~**A**lmás~~|49|
 |~~**B**anános~~|25||
-|**C**sokis|26|**C**sokis|51
+|**C**sokis|26|**C**sokis|51|
 
 10-en az utolsó helyről az első helyre írták át az **A**lmást és emiatt vesztett az **A**lmás?! Mi van??
 
@@ -250,10 +250,10 @@ Oké. Ezzel mi a baj akkor? Az egyik a Condorcet paradox, ahol a szavazók kő-p
 
  |5|5|26|
  |-|-|-|
- |D|A|B
- |A|C|D
- |C|B|A
- |B|D|C
+ |D|A|B|
+ |A|C|D|
+ |C|B|A|
+ |B|D|C|
 
  Ez alapján a Condorcet összehasonlítások így néznek ki:
  
