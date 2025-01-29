@@ -28,6 +28,7 @@ Ha nem írok vázlatot, akkor nem készülök fel rendesen a foglalkozásaimra h
 
 
 ### [Szavazások](./szavazasok/README.md) 
+
 | Részletek          |       |
 | ------------------ | ----- |
 | Kulcsszavak        | szavazási rendszerek, fairness criteria, Arrow's impossibility theorem|
